@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNumber1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumber1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/number_1"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/editBoxHint"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnActionPlus"
+        app:layout_constraintEnd_toEndOf="@+id/btnActionPlus" />
+
+    <EditText
+        android:id="@+id/etNumber2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/number_2"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/editBoxHint"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnActionMinus"
+        app:layout_constraintStart_toStartOf="@+id/btnActionMinus" />
+
+    <Button
+        android:id="@+id/btnActionPlus"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/action_plus"
+        android:textColor="@color/colorAccentLight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/space1"
+        app:layout_constraintEnd_toStartOf="@+id/space1"
+        app:layout_constraintTop_toTopOf="@+id/space1" />
+
+    <Button
+        android:id="@+id/btnActionMinus"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/action_minus"
+        android:textColor="@color/colorAccentLight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/space1"
+        app:layout_constraintStart_toEndOf="@+id/space1"
+        app:layout_constraintTop_toTopOf="@+id/space1" />
+
+    <Button
+        android:id="@+id/btnActionMultiply"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/action_multiply"
+        android:textColor="@color/colorAccentLight"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnActionPlus"
+        app:layout_constraintTop_toBottomOf="@+id/btnActionPlus" />
+
+    <Button
+        android:id="@+id/btnActionDivide"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/action_divide"
+        android:textColor="@color/colorAccentLight"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/btnActionMinus"
+        app:layout_constraintTop_toBottomOf="@+id/btnActionMinus" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

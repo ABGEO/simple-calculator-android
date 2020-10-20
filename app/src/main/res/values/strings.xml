@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Simple Calculator</string>
+    <string name="number_1">Number 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="action_plus" translatable="false">+</string>
+    <string name="action_minus" translatable="false">-</string>
+    <string name="action_divide" translatable="false">/</string>
+    <string name="action_multiply" translatable="false">*</string>
+    <string name="result" translatable="false">%.0f %c %.0f = %.1f</string>
+</resources>
